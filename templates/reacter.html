@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hello from Flask</title>
+    </head>
+    <body>
+      <form action="reacter/" method="post">
+        <label for="owner">Owner:</label>
+        <input type=text name="owner" id="owner">
+        Repository name:
+        <input type=text name="repository_name" >
+        ID:
+        <input type=text name="id" >
+        <input type=submit value="odeslat">
+      </form>
+        {% if name %}
+            <h1>Hello {{ name | cap | safe}}!</h1>
+            <a href="{{ url_for('hello') }}">Go back home</a>
+        {% else %}
+            <h1>Hello, World!</h1>
+
+        {% endif %}
+        
+    </body>
+</html>
