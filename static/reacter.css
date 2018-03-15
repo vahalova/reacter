@@ -1,0 +1,87 @@
+html { box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif; }
+*, ::after, ::before { box-sizing: inherit; }
+
+label{
+    font-family: 'Istok Web', sans-serif;
+    color: #FFE275;
+    font-weight: bold;
+    font-size: 18px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #46616D;
+    font-size: 16px;    
+}
+form{
+    padding: 20px;
+    margin: 0 auto; 
+    background-color: #384146;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+label input{
+    font-size:20px;  
+}
+input{
+    height: 25px;
+    border-radius: 5px;
+    color: #6A5456;
+    padding: 14px;
+    font-size: 14px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    border:none;
+}
+input:hover, input:active, input:focus,
+select:hover, select:active, select:focus{
+    background-color: #dfdcdc;
+    outline: none;
+}
+select{
+    padding: 5px;
+    border-radius: 5px;
+    color: #6A5456;
+    font-size: 14px;
+    width: 200px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    border:none;
+}
+.submit{
+    padding: 0px;
+    height: 44px;
+    width: 200px;
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #46616D;
+    color: #5CB7DE;
+    border: none;
+    font-weight: bold;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.submit:hover, .submit:active, .submit:focus{
+    background-color: rgb(37, 50, 56);
+    outline: none;
+}
+.submit:active{
+    border: 1px solid #4a4a4a;
+}
+h1{
+    color: #FFE275;
+    font-size: 27px;
+    margin: 0;
+}
+p{
+    color: #8C8556;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+

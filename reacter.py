@@ -15,7 +15,8 @@ def url():
     repository_name = request.form['repository_name']
     id_num = request.form['id']
     url = URL.format(owner,repository_name,id_num)
-    raise_for_status(url)
+    reaction = request.form['reaction']
+    raise_for_status(url, reaction)
     return redirect(url_for("index"))
     
 
@@ -28,8 +29,8 @@ def get_session():
     session.headers.update(headers)
     return session
 
-def raise_for_status(url):
+def raise_for_status(url, reaction):
     session = get_session()
     response = session.post(url,
     headers={'Accept': 'application/vnd.github.squirrel-girl-preview+jso'},
-    json={'content': 'hooray'})
+    json={'content': reaction})
