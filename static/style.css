@@ -1,0 +1,27 @@
+html { box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif; }
+*, ::after, ::before { box-sizing: inherit; }
+
+label{
+    font-family: 'Istok Web', sans-serif;
+    font-size:20px;
+    color: blue;
+}
+
+
+body{
+    background-color: #53594F;
+}
+form{
+    max-width: 700px;
+    background-color: #8C8556;
+}
+
+/*
+53594F
+1C2119
+8C8556
+BDB78A
+8B6F77
+5B464C
+*/

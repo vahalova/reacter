@@ -1,25 +1,21 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Hello from Flask</title>
+    <head>            
+        <meta charset="UTF-8">
+        <title>Reacter</title>
+        <link href="{{ url_for("static", filename="style.css") }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     </head>
     <body>
-      <form action="reacter/" method="post">
+      
+      <form action="reacter/" method="post" class="form">
         <label for="owner">Owner:</label>
         <input type=text name="owner" id="owner">
-        Repository name:
-        <input type=text name="repository_name" >
-        ID:
-        <input type=text name="id" >
-        <input type=submit value="odeslat">
-      </form>
-        {% if name %}
-            <h1>Hello {{ name | cap | safe}}!</h1>
-            <a href="{{ url_for('hello') }}">Go back home</a>
-        {% else %}
-            <h1>Hello, World!</h1>
-
-        {% endif %}
-        
+        <label for="repository_name">Repository name:</label>
+        <input type=text name="repository_name" id="repository_name">
+        <label for="id">ID:</label>
+        <input type=text name="id" id="id" >
+        <input type=submit value="odeslat" >
+      </form>        
     </body>
 </html>
