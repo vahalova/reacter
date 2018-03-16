@@ -12,8 +12,8 @@ $ export FLASK_DEBUG=1
 $ flask run
 
 Win:
-> set FLASK_APP=reacter.py
-
-> set FLASK_DEBUG=1
-
-> flask run
+ set FLASK_APP=reacter.py
+ 
+ set FLASK_DEBUG=1
+ 
+ flask run
