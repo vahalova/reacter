@@ -1,34 +1,31 @@
 <!doctype html>
 <html>
-    <head>            
+    <head>
         <meta charset="UTF-8">
         <title>Reacter</title>
         <link href="{{ url_for("static", filename="reacter.css") }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     </head>
-    <body>        
-        <ul>                
-            <form action="reacter/" method="post" class="form">
-                <h1>GitHub Reacter</h1>
-                <p>Ceate reaction for an issue comment</p>
-                <li><label for="owner">Owner:</label></li>
-                <li><input type=text name="owner" id="owner"></li>            
-                <li><label for="repository_name">Repository name:</label></li>
-                <li><input type=text name="repository_name" id="repository_name"></li>            
-                <li><label for="id">ID:</label></li>
-                <li><input type=text name="id" id="id" ></li>
-                <li><label for="reaction">Reaction:</label></li>
-                <li><select name="reaction" size="1">
+    <body>
+        <form action="reacter/" method="post" class="form">
+            <h1>GitHub Reacter</h1>
+            <p>Create reaction for an issue comment</p>
+                <label for="owner">Owner:<br>
+                <input type=text name="owner" id="owner"></label>
+                <label for="repository_name">Repository name:</label>
+                <input type=text name="repository_name" id="repository_name">
+                <label for="id">ID:</label>
+                <input type=text name="id" id="id" >
+                <label for="reaction">Reaction:</label>
+                <select name="reaction" size="1">
                         <option value="+1">Thumbs up</option>
                         <option value="-1">Thumbs down</option>
                         <option value="laugh">Laugh</option>
                         <option value="confused">Confused</option>
                         <option value="heart">Heart</option>
                         <option value="hooray">Hoorey</option>
-                    </select>
-                </li>
-                <input type=submit value="Submit" class="submit">
-            </form>
-        </ul>     
+                    </select>                
+            <input type=submit value="Submit" class="submit">
+        </form>
     </body>
 </html>

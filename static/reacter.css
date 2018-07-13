@@ -16,13 +16,16 @@ body{
 }
 form{
     padding: 20px;
-    margin: 0 auto;
+    margin: 10px auto;
     background-color: #384146;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 4px;
+    min-width: 30%;
+    width: 300px;
 }
-ul{
-    display: flex;
+ul {
+    margin: 0;
+    padding: 0;
 }
 li{
     list-style-type: none;
@@ -32,7 +35,7 @@ label input{
 }
 input{
     height: 25px;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #6A5456;
     font-size: 14px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -60,13 +63,14 @@ select{
     width: 100%;
     margin-top: 40px;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #46616D;
     color: #5CB7DE;
     border: none;
     font-weight: bold;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
+.cover{}
 .submit:hover, .submit:active, .submit:focus{
     background-color: rgb(37, 50, 56);
     outline: none;
